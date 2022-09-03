@@ -17,7 +17,7 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 350px;
+    max-width: 350px;
     height: fit-content;
     border: 1px solid transparent;
     border-radius: 0.5rem;
@@ -81,4 +81,12 @@ main{
 }
 .dark-blue{
     color: hsl(228, 12%, 48%);
+}
+@media only screen and (min-width:376px){
+    .container .img-desktop{
+        display: block;
+    }
+    .container .img-phone{
+        display: none;
+    }
 }

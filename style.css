@@ -31,6 +31,9 @@ main{
 }
 .container img{
     width: 100%;
+   
+}
+.container .img-phone{
     border-radius: 0.5rem 0.5rem 0 0;
 }
 .container .img-desktop{
@@ -42,7 +45,7 @@ main{
 .price{
     display: flex;
     justify-content: flex-start;
-
+    align-items: center;
 }
 .new-price{
     font-size: 30px;
@@ -63,6 +66,9 @@ main{
     padding:0.3rem 0.75rem;
     width: 100%;
 }
+.add-btn:hover{
+    text-decoration: none;
+}
 /* font & background color */
 .font-mont{
     font-family: 'Montserrat', sans-serif;
@@ -82,9 +88,27 @@ main{
 .dark-blue{
     color: hsl(228, 12%, 48%);
 }
-@media only screen and (min-width:376px){
+
+
+@media only screen and (min-width:376px) and (max-width:1440px){
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        max-width: 80%;
+        max-height: 90%;
+        position: absolute; 
+        top:0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
     .container .img-desktop{
         display: block;
+        border-radius: 0.5rem 0 0 0.5rem;
+        max-width: 50%;
     }
     .container .img-phone{
         display: none;
